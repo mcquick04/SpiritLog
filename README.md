@@ -3,7 +3,7 @@ SpiritLog – Project Outline
 
 I. Project Description 
 
-A.) Summarry 
+A.) Summary 
 
   1.) SpiritLog is a mobile application that helps users document their paranormal investigations in a consistent and organized fashion. 
 
