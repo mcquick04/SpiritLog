@@ -5,9 +5,9 @@ I. Project Description
 
 A.) Summary 
 
-  1.) SpiritLog is a mobile application that helps users document their paranormal investigations in a consistent and organized fashion. 
+  	1.) SpiritLog is a mobile application that helps users document their paranormal investigations in a consistent and organized fashion. 
 
-  2.) This app will allow users to record their paranormal investigation sessions with location details, date/time, equipment used, methods used, observations, and evidence links such as photos, videos, or audio without uploading the files to the app 
+  	2.) This app will allow users to record their paranormal investigation sessions with location details, date/time, equipment used, methods used, observations, and evidence links such as photos, videos, or audio without uploading the files to the app 
 
 B.) Target Users 
 
@@ -31,9 +31,9 @@ A.) Problem Statement
 
 B.) Impact 
 
-  1.) Users may lose track of certain pieces of vital evidence due to lost evidence or disorganized evidence setup 
+  	1.) Users may lose track of certain pieces of vital evidence due to lost evidence or disorganized evidence setup 
 
-  2.) Important session context such as equipment used, background information on the location being investigated, methods used to communicate, and observations during the investigation which could lead to complications when reviewing the evidence gathered in the investigation. 
+  	2.) Important session context such as equipment used, background information on the location being investigated, methods used to communicate, and observations during the investigation which could lead to complications when reviewing the evidence gathered in the investigation. 
 
 C.) Proposed Solution  
 
@@ -71,7 +71,7 @@ B.) Back End
 
 	1.) Firebase Firestore will be used as the back end database to store investigation logs 
 
-	2.) Fire store supports operations such as create, read, update, and delete for saving and retrieving investigation logs 
+	2.) Firestore supports operations such as create, read, update, and delete for saving and retrieving investigation logs 
 
 	3.) Data will be stored in a Firestore collection in which the data will be retrieved by the SpiritLog application 
 
@@ -119,11 +119,11 @@ VI. Design (Wireframes)
 
 A.) Home/Investigations List Screen 
 
-  1.) Header with App name and a “+Add New Investigation Log” button. 
+  	1.) Header with App name and a “+Add New Investigation Log” button. 
 
-  2.) Scrollable list of entered investigations (date, location name). 
+ 	2.) Scrollable list of entered investigations (date, location name). 
 
-  3.) Tap an item to open the details screen. 
+	3.) Tap an item to open the details screen. 
 
 B.) New Investigation From Screen 
 
@@ -131,13 +131,13 @@ B.) New Investigation From Screen
 
 	2.) Location name input 
 
-  3.) Equipment Checklist 
+  	3.) Equipment Checklist 
 
-  4.) Notes field. 
+  	4.) Notes field. 
 
-  5.) Evidence references field for short notes and video/audio URLs 
+  	5.) Evidence references field for short notes and video/audio URLs 
 
-  6.) Save button to store log into Firebase Firestore  
+  	6.) Save button to store log into Firebase Firestore  
 
 C.) Investigation Details Screen 
 
@@ -156,5 +156,32 @@ D.) Edit Investigation Screen
 	1.) Pre-filled fields for date/time, location name, equipment used, notes, and evidences references  
 
 	2.) “Save Changes” button 
-
+		
 	3.) “Cancel” button 
+
+------------------
+
+Version Changelog
+
+## v1.0 - Initial Proposal of SpiritLog Application
+	- Defined concept of SpiritLog
+	- Created application screen wireframes
+	- Defined core features of applcation
+	- Identified Application target users
+	- Chose application development platform (React Native)
+	- Chose backend support (Firebase Firestore)
+
+## v.1.1 - Week 4 Project Update 
+	- Implemented core UI screens for investigation logging entries
+	- Designed input forms (text input) for investigation logging
+	- Established screen structure for easier app navigation
+	- Prepares application layout for future application screen flow integration
+	- Planned additions for next update:
+		- Design input forms (checkboxes/equipment types)
+		- Input Date/Time feature into investigation logging
+		- Develop saving/editting/deleting of investigation entries
+		- Develop application navigation flow throughout the app
+		- Develop image/video evidence storage
+		- Prepare integration of Firestore storage 
+
+
