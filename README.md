@@ -1,7 +1,7 @@
-SpiritLog – Project Outline 
+# SpiritLog – Project Outline 
 
 
-I. Project Description 
+## I. Project Description 
 
 A.) Summary 
 
@@ -23,7 +23,7 @@ C.) Project Goals
 
 	3.) Make the reviewing of past paranormal investigations easier and have a way to view and compare notes from past investigations.  
 
-II. Problem Addressing 
+## II. Problem Addressing 
 
 A.) Problem Statement 
 
@@ -42,7 +42,7 @@ C.) Proposed Solution
 	2.) Each investigation log can be individually reviewed, updated, and even referenced in other investigations when reviewing evidence making long term tracking of investigations easier 
 
 
-III. Platform 
+## III. Platform 
 
 A.) Platform Choice 
 
@@ -57,7 +57,7 @@ B.) Justification
 	2.) Reduces setup complexity while still helping reinforce knowledge on mobile application concepts such as navigation, storage, and application components.  
 
 
-IV. Front End / Back End Support 
+## IV. Front End / Back End Support 
 
 A.) Front End 
 
@@ -76,7 +76,7 @@ B.) Back End
 	3.) Data will be stored in a Firestore collection in which the data will be retrieved by the SpiritLog application 
 
 
-V. Functionality 
+## V. Functionality 
 
 A.) Core Features 
 
@@ -115,7 +115,7 @@ A.) Core Features
 		a.) Removes a selected log entry from Firestore with a yes or no confirmation prompt.  
 
 
-VI. Design (Wireframes) 
+## VI. Design (Wireframes) 
 
 A.) Home/Investigations List Screen 
 
@@ -161,7 +161,7 @@ D.) Edit Investigation Screen
 
 ------------------
 
-Version Changelog
+# Version Changelog
 
 ## v1.0 - Initial Proposal of SpiritLog Application
 	- Defined concept of SpiritLog
