@@ -46,13 +46,13 @@ C.) Proposed Solution
 
 A.) Platform Choice 
 
-	1.) Android Mobile Application developed using React Native with Expo 
+	1.) Android Mobile Application developed using Android SDK (Software Development Kit)
 
 	2.) Testing will be performed on an Android Emulator such as BlueStacks 
 
 B.) Justification  
 
-	1.) React Native with Expo allows fast development, simplified testing, and amodern UI, and is also considered one of the easier platforms to use for beginner mobile application developers.  
+	1.) Android SDK (Software Development Kit) allows fast development, simplified testing, and amodern UI, and is also considered one of the easier platforms to use for beginner mobile application developers.  
 
 	2.) Reduces setup complexity while still helping reinforce knowledge on mobile application concepts such as navigation, storage, and application components.  
 
@@ -61,7 +61,7 @@ B.) Justification
 
 A.) Front End 
 
-	1.) React Native with Expo UI using screens, forms, lists, and buttons 
+	1.) Android SDK (Software Development Kit) UI using screens, forms, lists, and buttons 
 
 	2.) Stack navigation form common mobile flow such as (Home to Details to Edit) 
 
@@ -168,7 +168,7 @@ D.) Edit Investigation Screen
 	- Created application screen wireframes
 	- Defined core features of applcation
 	- Identified Application target users
-	- Chose application development platform (React Native)
+	- Chose application development Android SDK (Software Development Kit), had to switch due to complications with research
 	- Chose backend support (Firebase Firestore)
 
 ## v.1.1 - Week 4 Project Update 
