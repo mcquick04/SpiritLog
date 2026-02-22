@@ -176,6 +176,7 @@ D.) Edit Investigation Screen
 	- Designed input forms (text input) for investigation logging
 	- Established screen structure for easier app navigation
 	- Prepares application layout for future application screen flow integration
+	
 	- Planned additions for next update:
 		- Design input forms (checkboxes/equipment types)
 		- Input Date/Time feature into investigation logging
@@ -183,5 +184,26 @@ D.) Edit Investigation Screen
 		- Develop application navigation flow throughout the app
 		- Develop image/video evidence storage
 		- Prepare integration of Firestore storage 
+
+## v.1.2 - Week 5 Project Update
+	-Added validation for entries such as title and date/time
+	-Added date/time features into investigation logging
+	-Added checkboxes to new entry screen 
+	-Added forward navigation throughout the app
+	-Added displaying of checked items from saved entry to details screen
+	-Added button to save new entries, 
+		-Added interactable icon containing location name and date that navigated user to details of interacted entry 
+	-Added UI for entry details
+	-Added “Edit Investigation” button to Entry Details
+
+	-Planned additions for next update:
+		-Add UI for "Edit Investigation"
+		-Add functioning "Save" and "Delete" buttons for Edit Investigation 
+		-Add video & audio evidence upload capabilities for new entry
+		-Begin integration of Firestore storage
+
+## v.1.3 - Week 6 Project Update
+	-Currently in progress
+
 
 
