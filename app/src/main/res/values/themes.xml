@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme with ActionBar. -->
+    <style name="Base.Theme.SpiritLog" parent="Theme.Material3.DayNight">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.SpiritLog" parent="Base.Theme.SpiritLog" />
+
+    <!-- Theme for MainActivity to hide ActionBar -->
+    <style name="Theme.SpiritLog.NoActionBar" parent="Theme.Material3.DayNight.NoActionBar" />
+</resources>
