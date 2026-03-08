@@ -215,6 +215,17 @@ D.) Edit Investigation Screen
 		-Touch up overall app UI
 
 ## v.1.4 - Final Submission for Class Update (development will continue after class duration)
+	-Added full integration of FireStore storage
+	-Added unique “documentId” to each entry to ensure that correct entry is edited or deleted when selected
+	-Added video, image, and audio media upload capabilities
+		-Added an Evidence & Media section with buttons corresponding to images, videos and audio
+		-Added field for URL uploading which can be interacted with on details screen
+	-Added ProgressBars to show log saving progress of logs
+	-Added a swipe refresh feature so logs can be manually refreshed
+	-Added offline support for spirit log (for those spot/dead zone investigation areas)
+	-Changed UI of home screen to look a bit more clean
+		-Removed large add investigation button
+		-Added smaller, more clean add investigation button
 
 
 
