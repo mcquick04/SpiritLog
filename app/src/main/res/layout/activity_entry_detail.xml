@@ -37,76 +37,26 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <!--title label for date/time-->
-            <TextView
-                android:id="@+id/tvDetailDateTimeLabel"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Date/Time:"
-                android:textSize="18sp"
-                android:textStyle="bold"/>
+            <TextView android:id="@+id/tvDetailDateTimeLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Date/Time:" android:textSize="18sp" android:textStyle="bold"/>
+            <TextView android:id="@+id/tvDetailDateTime" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginBottom="16dp" android:textSize="16sp"/>
 
-            <!--detail date/time-->
-            <TextView
-                android:id="@+id/tvDetailDateTime"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:layout_marginBottom="16dp"
-                android:textSize="16sp"/>
+            <TextView android:id="@+id/tvDetailLocationLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Location:" android:textSize="18sp" android:textStyle="bold"/>
+            <TextView android:id="@+id/tvDetailLocation" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginBottom="16dp" android:textSize="16sp"/>
 
-            <!--title label for location-->
-            <TextView
-                android:id="@+id/tvDetailLocationLabel"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Location:"
-                android:textSize="18sp"
-                android:textStyle="bold"/>
+            <TextView android:id="@+id/tvDetailEquipmentLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Equipment Used:" android:textSize="18sp" android:textStyle="bold"/>
+            <TextView android:id="@+id/tvDetailEquipment" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginBottom="16dp" android:textSize="16sp"/>
 
-            <!--detail location-->
-            <TextView
-                android:id="@+id/tvDetailLocation"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:layout_marginBottom="16dp"
-                android:textSize="16sp"/>
+            <TextView android:id="@+id/tvDetailEvidenceLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Evidence &amp; Media:" android:textSize="18sp" android:textStyle="bold"/>
+            <TextView android:id="@+id/tvDetailUrl" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="No URL provided" android:textColor="#2196F3" android:textSize="16sp"/>
 
-            <!--title label for equipment details-->
-            <TextView
-                android:id="@+id/tvDetailEquipmentLabel"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Equipment Used:"
-                android:textSize="18sp"
-                android:textStyle="bold"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="8dp" android:layout_marginBottom="16dp">
+                <Button android:id="@+id/btnViewImage" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="View Pic" android:textSize="12sp" android:visibility="gone"/>
+                <Button android:id="@+id/btnViewVideo" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Play Vid" android:textSize="12sp" android:layout_marginHorizontal="4dp" android:visibility="gone"/>
+                <Button android:id="@+id/btnViewAudio" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Listen" android:textSize="12sp" android:visibility="gone"/>
+            </LinearLayout>
 
-            <!--detail equipment list-->
-            <TextView
-                android:id="@+id/tvDetailEquipment"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:layout_marginBottom="16dp"
-                android:textSize="16sp"/>
-
-            <!--title label for notes details-->
-            <TextView
-                android:id="@+id/tvDetailNotesLabel"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Notes:"
-                android:textStyle="bold"
-                android:textSize="18sp"/>
-
-            <!--details for taken notes-->
-            <TextView
-                android:id="@+id/tvDetailNotes"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:textSize="16sp"/>
+            <TextView android:id="@+id/tvDetailNotesLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Notes:" android:textStyle="bold" android:textSize="18sp"/>
+            <TextView android:id="@+id/tvDetailNotes" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:textSize="16sp"/>
 
         </LinearLayout>
 

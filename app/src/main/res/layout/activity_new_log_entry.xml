@@ -43,7 +43,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-    <!-- Equipment Label (Outside ScrollView) -->
+    <!--equipment label (outside ScrollView) -->
     <TextView
         android:id="@+id/tvEquipmentLabel"
         android:layout_width="wrap_content"
@@ -62,7 +62,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginBottom="12dp"
         app:layout_constraintTop_toBottomOf="@id/tvEquipmentLabel"
-        app:layout_constraintBottom_toTopOf="@id/etNotes"
+        app:layout_constraintBottom_toTopOf="@id/tvEvidenceLabel"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
@@ -72,67 +72,70 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <CheckBox
-                android:id="@+id/cbEmfReader"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="EMF Reader"/>
-
-            <CheckBox
-                android:id="@+id/cbRemPod"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="REM Pod"/>
-
-            <CheckBox
-                android:id="@+id/cbSpiritBox"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Spirit Box"/>
-
-            <CheckBox
-                android:id="@+id/cbEvpRecorder"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="EVP Recorder"/>
-
-            <CheckBox
-                android:id="@+id/cbThermometer"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Thermometer"/>
-
-            <CheckBox
-                android:id="@+id/cbAudioRecorder"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Audio Recorder"/>
-
-            <CheckBox
-                android:id="@+id/cbCatBall"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Motion Sensing Cat Balls"/>
-
-            <CheckBox
-                android:id="@+id/cbThermalImager"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Thermal Imager"/>
+            <CheckBox android:id="@+id/cbEmfReader" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="EMF Reader"/>
+            <CheckBox android:id="@+id/cbRemPod" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="REM Pod"/>
+            <CheckBox android:id="@+id/cbSpiritBox" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Spirit Box"/>
+            <CheckBox android:id="@+id/cbEvpRecorder" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="EVP Recorder"/>
+            <CheckBox android:id="@+id/cbThermometer" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Thermometer"/>
+            <CheckBox android:id="@+id/cbAudioRecorder" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Audio Recorder"/>
+            <CheckBox android:id="@+id/cbCatBall" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Motion Sensing Cat Balls"/>
+            <CheckBox android:id="@+id/cbThermalImager" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Thermal Imager"/>
 
         </LinearLayout>
 
     </ScrollView>
 
+    <!--evidence section -->
+    <TextView
+        android:id="@+id/tvEvidenceLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Evidence &amp; Media:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/svEquipment"
+        app:layout_constraintBottom_toTopOf="@id/etEvidenceUrl"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:id="@+id/etEvidenceUrl"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Evidence URL (e.g. YouTube):"
+        android:inputType="textUri"
+        app:layout_constraintTop_toBottomOf="@id/tvEvidenceLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/llMediaButtons"/>
+
+    <LinearLayout
+        android:id="@+id/llMediaButtons"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/etEvidenceUrl"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/etNotes">
+
+        <Button android:id="@+id/btnAddImage" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Picture" android:textSize="12sp"/>
+        <Button android:id="@+id/btnAddVideo" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Video" android:textSize="12sp" android:layout_marginHorizontal="4dp"/>
+        <Button android:id="@+id/btnAddAudio" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Audio" android:textSize="12sp"/>
+    </LinearLayout>
+
     <!--text box for notes-->
     <EditText
         android:id="@+id/etNotes"
         android:layout_width="0dp"
-        android:layout_height="100dp"
+        android:layout_height="80dp"
         android:hint="Notes:"
         android:gravity="top"
         android:inputType="textMultiLine"
+        android:layout_marginTop="12dp"
         android:layout_marginBottom="16dp"
+        app:layout_constraintTop_toBottomOf="@id/llMediaButtons"
         app:layout_constraintBottom_toTopOf="@id/btnNewEntry"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
@@ -146,5 +149,16 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
+
+    <!-- ProgressBar for saving status -->
+    <ProgressBar
+        android:id="@+id/pbSaving"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

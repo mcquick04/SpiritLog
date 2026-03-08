@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     android:padding="16dp">
 
-    <!--text box for investigation's title-->
     <EditText
         android:id="@+id/etEditTitle"
         android:layout_width="0dp"
@@ -18,7 +17,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-    <!--text box for investigation location-->
     <EditText
         android:id="@+id/etEditLocation"
         android:layout_width="0dp"
@@ -30,7 +28,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-    <!--date/time picker-->
     <EditText
         android:id="@+id/etEditDateTime"
         android:layout_width="0dp"
@@ -61,7 +58,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginBottom="12dp"
         app:layout_constraintTop_toBottomOf="@id/tvEditEquipmentLabel"
-        app:layout_constraintBottom_toTopOf="@id/etEditNotes"
+        app:layout_constraintBottom_toTopOf="@id/tvEditEvidenceLabel"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
@@ -70,73 +67,66 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-
-            <CheckBox
-                android:id="@+id/cbEditEmfReader"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="EMF Reader"/>
-
-            <CheckBox
-                android:id="@+id/cbEditRemPod"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="REM Pod"/>
-
-            <CheckBox
-                android:id="@+id/cbEditSpiritBox"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Spirit Box"/>
-
-            <CheckBox
-                android:id="@+id/cbEditEvpRecorder"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="EVP Recorder"/>
-
-            <CheckBox
-                android:id="@+id/cbEditThermometer"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Thermometer"/>
-
-            <CheckBox
-                android:id="@+id/cbEditAudioRecorder"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Audio Recorder"/>
-
-            <CheckBox
-                android:id="@+id/cbEditCatBall"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Motion Sensing Cat Balls"/>
-
-            <CheckBox
-                android:id="@+id/cbEditThermalImager"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Thermal Imager"/>
-
+            <CheckBox android:id="@+id/cbEditEmfReader" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="EMF Reader"/>
+            <CheckBox android:id="@+id/cbEditRemPod" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="REM Pod"/>
+            <CheckBox android:id="@+id/cbEditSpiritBox" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Spirit Box"/>
+            <CheckBox android:id="@+id/cbEditEvpRecorder" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="EVP Recorder"/>
+            <CheckBox android:id="@+id/cbEditThermometer" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Thermometer"/>
+            <CheckBox android:id="@+id/cbEditAudioRecorder" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Audio Recorder"/>
+            <CheckBox android:id="@+id/cbEditCatBall" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Motion Sensing Cat Balls"/>
+            <CheckBox android:id="@+id/cbEditThermalImager" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Thermal Imager"/>
         </LinearLayout>
-
     </ScrollView>
 
-    <!--text box for notes-->
+    <TextView
+        android:id="@+id/tvEditEvidenceLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Evidence &amp; Media:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/svEditEquipment"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:id="@+id/etEditEvidenceUrl"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Evidence URL:"
+        android:inputType="textUri"
+        app:layout_constraintTop_toBottomOf="@id/tvEditEvidenceLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/llEditMediaButtons"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/etEditEvidenceUrl"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <Button android:id="@+id/btnEditImage" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Picture" android:textSize="12sp"/>
+        <Button android:id="@+id/btnEditVideo" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Video" android:textSize="12sp" android:layout_marginHorizontal="4dp"/>
+        <Button android:id="@+id/btnEditAudio" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Audio" android:textSize="12sp"/>
+    </LinearLayout>
+
     <EditText
         android:id="@+id/etEditNotes"
         android:layout_width="0dp"
-        android:layout_height="100dp"
+        android:layout_height="80dp"
         android:hint="Notes:"
         android:gravity="top"
         android:inputType="textMultiLine"
+        android:layout_marginTop="12dp"
         android:layout_marginBottom="16dp"
+        app:layout_constraintTop_toBottomOf="@id/llEditMediaButtons"
         app:layout_constraintBottom_toTopOf="@id/llButtons"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-    <!-- Action Buttons -->
     <LinearLayout
         android:id="@+id/llButtons"
         android:layout_width="0dp"
@@ -145,24 +135,18 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
-
-        <Button
-            android:id="@+id/btnDeleteEntry"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginEnd="8dp"
-            android:text="Delete Entry"
-            android:backgroundTint="#F44336"/>
-
-        <Button
-            android:id="@+id/btnSaveChanges"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginStart="8dp"
-            android:text="Save Changes"/>
-
+        <Button android:id="@+id/btnDeleteEntry" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginEnd="8dp" android:text="Delete" android:backgroundTint="#F44336"/>
+        <Button android:id="@+id/btnSaveChanges" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="8dp" android:text="Save"/>
     </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/pbEditSaving"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

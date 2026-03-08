@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "272777771189",
+    "project_id": "spiritlog-2deb4",
+    "storage_bucket": "spiritlog-2deb4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:272777771189:android:824a7e579b0442ed2026fc",
+        "android_client_info": {
+          "package_name": "com.example.spiritlog"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxTExZIwIwHrz6HlFZZmhGm9VkCprOTo0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
