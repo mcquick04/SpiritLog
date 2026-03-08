@@ -203,7 +203,19 @@ D.) Edit Investigation Screen
 		-Begin integration of Firestore storage
 
 ## v.1.3 - Week 6 Project Update
-	-Currently in progress
+	-Added UI for Edit Investigation
+	-Added functioning “Save Changes” and “Delete Entry” buttons
+	-Added pop-up verifying if user wants to delete entry
+	-Changed titles other than Homepage title to ActionBars
+		-Added backwards navigation throughout the app with back arrows in ActionBars
+	
+	-Planned additions for next update:
+		-Add complete integration of Firestore storage
+		-Add video & audio evidence upload capabilities via phone’s files
+		-Touch up overall app UI
+
+## v.1.4 - Final Submission for Class Update (development will continue after class duration)
+
 
 
 
