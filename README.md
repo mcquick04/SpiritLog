@@ -119,47 +119,194 @@ A.) Core Features
 
 A.) Home/Investigations List Screen 
 
-  	1.) Header with App name and a “+Add New Investigation Log” button. 
+Description -
 
- 	2.) Scrollable list of entered investigations (date, location name). 
+The Home Screen of SpiritLog serves as the main landing page of the application. It displays a scrollable list of previously saved investigation logs retrieved from Firebase Firestore. Users can tap on an investigation log on the scrollable list to view its details
+or select the add button to create a new investigation log entry.
 
-	3.) Tap an item to open the details screen. 
+Wireframe - 
+
++──────────────────────────────────────────────+
+│                  SpiritLog                   |         
+│______________________________________________|                                              
+│ (entry: date time - name)                    │
+│ (entry: date time - name)                    │
+│ (entry: date time - name)                    │
+│ (entry: date time - name)                    │
+│ (entry: date time - name)                    │
+│ (entry: date time - name)                    │
+│ (entry: date time - name)                    │
+│ (entry: date time - name)                    │
+│ (entry: date time - name)                    │
+│ (entry: date time - name)                    │
+│ (entry: date time - name)                    │
+│                                              │
+│                                              │
+│                                              │
+│                                      [ + ]   │
+│                                              │
++──────────────────────────────────────────────+
 
 B.) New Investigation From Screen 
 
-	1.) Date/time input 
+Description -
 
-	2.) Location name input 
+The New Investigation screen allows users to create a new paranormal investigation log. Users can enter the investigation title, location, and date & time. The equipment used checklist allows investigators to select equipment used during the investigation. The Evidence & Media section allows the user to upload reference media such as pictures, videos, and audio recordings. A notes field also provides space for users to document observations. Pressing the "Save Entry" button stores the investigation ;pg in Firebase Firestore.
 
-  	3.) Equipment Checklist 
+Wireframe - 
 
-  	4.) Notes field. 
-
-  	5.) Evidence references field for short notes and video/audio URLs 
-
-  	6.) Save button to store log into Firebase Firestore  
++──────────────────────────────────────────────+
+│ <-            New Investigation              │
+├──────────────────────────────────────────────┤
+│                                              │
+│  Title:                                      │
+│  +────────────────────────────────────────+  │
+│  │                                        │  │
+│  +────────────────────────────────────────+  │
+│                                              │
+│  Location:                                   │
+│  +────────────────────────────────────────+  │
+│  │                                        │  │
+│  +────────────────────────────────────────+  │
+│                                              │
+│  Date / Time:                                │
+│  +────────────────────────────────────────+  │
+│  │                                        │  │
+│  +────────────────────────────────────────+  │
+│                                              │
+│  Equipment Used:                             │
+│  [x] Spirit Box                              │
+│  [] EVP Recorder                             │
+│  [] Thermometer                              │
+│  [x] Audio Recorder                          │
+│  [] Motion Sensing Cat Balls                 │
+│  [x] Thermal Imager                          │
+│                                              │
+│  Evidence & Media:                           │                         
+│  +────────────────────────────────────────+  │
+│  │                                        │  │
+│  +────────────────────────────────────────+  │
+│                                              │
+│   [ Picture ]   [ Video ]   [ Audio ]        │
+│                                              │
+│  Notes:                                      │
+│  +────────────────────────────────────────+  │
+│  │                                        │  │
+│  │                                        │  │
+│  │                                        │  │
+│  +────────────────────────────────────────+  │
+│                                              │
+│              [ Save Entry ]                  │
+│                                              │
++──────────────────────────────────────────────+
 
 C.) Investigation Details Screen 
 
-	1.) Display of date/time, and location name 
+Description - 
 
-	2.) Equipment used (read only) 
+The Investigation Details Screen displays a saved investigation log in a read-only format. This screen allows user to review the information recorded during a paranormal investigation. The displayed information includes the investigation's title, location, date & time, equipment used, notes, and any media such as images, videos, audio, or URLs. The layout is organized so that users can easily review the details of the logged investigation. At the bottom of the screen an "Edit Investigation Entry" button is provided which navigates the user to the "Edit Investigation" screen.
 
-	3.) Notes sections (read only) 
+Wireframe - 
 
-	4.) Evidence references (list of small notes, descriptions, URLs etc.) 
-
-	5.) “Edit” and “Delete” buttons 
++──────────────────────────────────────────────+
+│ <-         Investigation Details             │
+├──────────────────────────────────────────────┤
+│            (dispalys title entered)          │
+│  											   |
+|                                              |
+|  Date & Time:                                |
+|   (displays entered date & time)             |
+│                                              |
+│                                              │
+│                                              │
+│  	                                           |
+|  Location:                                   |
+|   (displays entered location)                |
+│                                              |
+│                                              │
+│                                              |
+│                                              │
+│  Equipment Used:                             │
+│    (displays checked items)                  │
+│                                              │
+│                                              │
+│                                              │
+│                                              │
+│                                              │
+│                                              │
+│  Evidence & Media:                           │                         
+│    (displays uploaded image and video url)   | 
+|											   |
+|                                              |
+│                                              │
+│                                              │
+│                                              │
+│  Notes:                                      │
+│   (displays entered notes)				   |
+|                                              |
+|                                              |
+|                                              |
+|                                              |
+│                                              │
+│         [ Edit Investigation Entry ]         │
+│                                              │
++──────────────────────────────────────────────+
 
 D.) Edit Investigation Screen 
 
-	1.) Pre-filled fields for date/time, location name, equipment used, notes, and evidences references  
+Desciption -
 
-	2.) “Save Changes” button 
-		
-	3.) “Cancel” button 
+The Edit Investigation screen allows a user to modify existing investigation logs. When the screen is opened, all fields are automatically populated with the previously saved data from Firebase Firestoe. Users can update information such as the investigation title, date & time, equipment used, notes, and media such as images, videos, audio recordings, and URLs. The screen maintains the same layout as the "New Investigation" screen to ensure consistency in the user experience. At the bottom of the screen their are two buttons a "Save" button and "Delete" button. With the "Save" button users can save changes made to the log which will automatically update the log upon saving. The "Delete" button gives the user a pop up asking if the user really wants to delete the entry and if approved the entry will be deleted.  
 
-------------------
+Wireframe - 
+
++──────────────────────────────────────────────+
+│ <-           Edit Investigation              │
+├──────────────────────────────────────────────┤
+│                                              │
+│  Title:                                      │
+│  +────────────────────────────────────────+  │
+│  │                                        │  │
+│  +────────────────────────────────────────+  │
+│                                              │
+│  Location:                                   │
+│  +────────────────────────────────────────+  │
+│  │                                        │  │
+│  +────────────────────────────────────────+  │
+│                                              │
+│  Date / Time:                                │
+│  +────────────────────────────────────────+  │
+│  │                                        │  │
+│  +────────────────────────────────────────+  │
+│                                              │
+│  Equipment Used:                             │
+│  [x] Spirit Box                              │
+│  [] EVP Recorder                             │
+│  [] Thermometer                              │
+│  [x] Audio Recorder                          │
+│  [] Motion Sensing Cat Balls                 │
+│  [x] Thermal Imager                          │
+│                                              │
+│  Evidence & Media:                           │                         
+│  +────────────────────────────────────────+  │
+│  │                                        │  │
+│  +────────────────────────────────────────+  │
+│                                              │
+│   [ Picture ]   [ Video ]   [ Audio ]        │
+│                                              │
+│  Notes:                                      │
+│  +────────────────────────────────────────+  │
+│  │                                        │  │
+│  │                                        │  │
+│  │                                        │  │
+│  +────────────────────────────────────────+  │
+│                                              │
+│         [ Save ]          [ Delete ]         │
+│                                              │
++──────────────────────────────────────────────+
+
+
+-----------------------------------------------------
 
 # Version Changelog
 
